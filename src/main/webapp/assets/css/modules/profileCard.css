@@ -1,0 +1,154 @@
+/************************************************************/
+/*  THIS STYLESHEET REQUIRE card.css                        */
+/************************************************************/
+/************************************************************/
+/* CONSTANTS VARIABLES                                      */
+/************************************************************/
+:root {
+    --profile-card-img-size: 100px;
+    --btn-text-size: 14px;
+}
+/*************************************************************/
+.btn {
+    font-size: var(--btn-text-size);
+    font-weight: 600;
+}
+
+.profile-view {
+    margin: 0;
+    padding: 0;
+    align-items: center !important;
+
+}
+.profile-view .profile-img-wrap {
+    padding-left: 0;
+}
+.profile-view .profile-img-wrap .profile-img-container {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    justify-content: center;
+    margin-bottom: 1rem !important;
+}
+.profile-view .profile-img-container img {
+    height: var(--profile-card-img-size);
+    width: var(--profile-card-img-size);
+    overflow: hidden;
+}
+
+.profile-view .profile-info-left {
+    padding-left: calc(var(--default-padding)*2);
+    padding-right: 0;
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.profile-view .profile-info-left .user-name {
+    color: var(--lightblack);
+    font-size: x-large;
+}
+.profile-view .profile-info-left .user-role {
+    color: var(--lightblack);
+}
+.profile-view .profile-info-left .user-cf-piva {
+    margin-bottom: 0;
+    font-size: small;
+    color: var(--darkgrey);
+}
+.profile-view .btn {
+    width: 100%;
+    border: 0;
+}
+
+.profile-view .personal-info ul {
+    list-style: none;
+    border-left: 2px dashed #888da8;
+    padding-left: calc(var(--default-padding)*2);
+    margin-bottom: 0;
+}
+
+.profile-view .personal-info ul li .title {
+    float: left;
+    color: var(--darkgrey);
+    font-weight: 300;
+    width: 35%;
+}
+.profile-view .personal-info ul li .text {
+    font-weight: 400;
+    color: var(--lightblack);
+}
+.profile-view .personal-info ul li .text > a,
+.profile-view .personal-info ul li .text > a:hover {
+    color: var(--lightblue);
+    text-decoration: none;
+}
+/************************************************************/
+/*  MOBILE VIEW                                             */
+/************************************************************/
+@media screen and (max-width: 992px) {
+
+    .profile-view .profile-img-wrap {
+        padding-right: 0;
+    }
+
+    .profile-view .profile-img-container img {
+        height: calc(var(--profile-card-img-size) * 0.9);
+        width: calc(var(--profile-card-img-size) * 0.9);
+    }
+
+    .profile-view .btn {
+        font-size: small;
+    }
+
+    .profile-view .profile-basic {
+        margin-top: var(--default-padding);
+    }
+
+    .profile-view .profile-info-left {
+        padding-left: var(--default-padding);
+        padding-right: var(--default-padding);
+        text-align: center;
+        text-align: -moz-center;
+        text-align: -webkit-center;
+    }
+
+    .profile-view .profile-info-left .user-name {
+        font-size: medium;
+        font-weight: 600;
+    }
+    .profile-view .profile-info-left .user-role {
+        font-size: small;
+    }
+    .profile-view .profile-info-left .user-cf-piva {
+        font-size: medium;
+    }
+
+    .profile-view .personal-info ul {
+        padding-left: 0;
+        padding-top: 20px;
+        border-left: 0;
+        border-top: 2px dashed #888da8;
+        margin-top: 20px;
+    }
+
+    .profile-view .personal-info ul li .title {
+        margin-top: 5px;
+        width: 100%;
+        font-weight: 500;
+    }
+
+    .profile-view .personal-info ul li .text {
+        font-weight: 700;
+    }
+
+}

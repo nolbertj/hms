@@ -1,0 +1,60 @@
+/************************************************************/
+/* CONSTANTS VARIABLES                                      */
+/************************************************************/
+:root {
+    --checkbox-radius: 0.33rem;
+    --checkbox-background: inherit;
+    --checkbox-background-when-checked: var(--secondary-color);
+    --checkbox-border: 1px solid rgba(0,0,0,0.25);
+}
+/************************************************************/
+.custom-checkbox .custom-control-label::before {
+    -webkit-border-radius: var(--checkbox-radius);
+    -moz-border-radius: var(--checkbox-radius);
+    -ms-border-radius: var(--checkbox-radius);
+    border-radius: var(--checkbox-radius);
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    background: var(--checkbox-background);
+    border: var(--checkbox-border);
+}
+
+.custom-checkbox .custom-control-label::after {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background: var(--checkbox-background-when-checked);
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border: 0;
+}
+
+.custom-checkbox .custom-control-input:disabled:checked~.custom-control-label::before {
+    background: rgba(50,150,200,0.5);
+}
+/************************************************************/
+/*  MOBILE VIEW                                             */
+/************************************************************/
+@media screen and (max-width: 992px) {
+
+    .custom-control-label::before,
+    .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+        -ms-transform: scale(1.25); /* IE */
+        -moz-transform: scale(1.25); /* FF */
+        -webkit-transform: scale(1.25); /* Safari and Chrome */
+        -o-transform: scale(1.25); /* Opera */
+        transform: scale(1.25); /* default */
+    }
+
+}

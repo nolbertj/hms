@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <!-- *********************************************************************************************************** -->
+    <display-name>HMS</display-name>
+    <description>Healthcare Management System</description>
+    <welcome-file-list><welcome-file>index.jsp</welcome-file></welcome-file-list>
+    <!-- *********************************************************************************************************** -->
+    <!-- ************************ FILTERS ************************************************************************** -->
+    <!--
+    <filter>
+        <filter-name>AuthenticationFilter</filter-name>
+        <filter-class>it.unitn.disi.wp.project.hms.filters.AuthenticationFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>TimeoutFilter</filter-name>
+        <filter-class>it.unitn.disi.wp.project.hms.filters.TimeoutFilter</filter-class>
+    </filter>
+
+    <filter>
+        <filter-name>RestrictedPagesFilter</filter-name>
+        <filter-class>it.unitn.disi.wp.project.hms.filters.PagesFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>AssetsFilter</filter-name>
+        <filter-class>it.unitn.disi.wp.project.hms.filters.AssetsFilter</filter-class>
+    </filter>
+
+    <filter>
+        <filter-name>PazienteFilter</filter-name>
+        <filter-class>it.unitn.disi.wp.project.hms.filters.user.PazienteFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>MedicoBaseFilter</filter-name>
+        <filter-class>it.unitn.disi.wp.project.hms.filters.user.MedicoBaseFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>MedicoSpecialistaFilter</filter-name>
+        <filter-class>it.unitn.disi.wp.project.hms.filters.user.MedicoSpecialistaFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>FarmaciaFilter</filter-name>
+        <filter-class>it.unitn.disi.wp.project.hms.filters.user.FarmaciaFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>SspFilter</filter-name>
+        <filter-class>it.unitn.disi.wp.project.hms.filters.user.SspFilter</filter-class>
+    </filter>
+    -->
+    <!-- *********************************************************************************************************** -->
+    <!--
+    <filter-mapping>
+        <filter-name>RestrictedPagesFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>TimeoutFilter</filter-name>
+        <url-pattern>/areaPrivata/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>AuthenticationFilter</filter-name>
+        <url-pattern>/login</url-pattern>
+        <url-pattern>/logout</url-pattern>
+        <url-pattern>/areaPrivata/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>AssetsFilter</filter-name>
+        <url-pattern>/assets/img/restricted/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>PazienteFilter</filter-name>
+        <url-pattern>/areaPrivata/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>MedicoBaseFilter</filter-name>
+        <url-pattern>/areaPrivata/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>MedicoSpecialistaFilter</filter-name>
+        <url-pattern>/areaPrivata/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>FarmaciaFilter</filter-name>
+        <url-pattern>/areaPrivata/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>SspFilter</filter-name>
+        <url-pattern>/areaPrivata/*</url-pattern>
+    </filter-mapping>
+    -->
+    <!-- *********************************************************************************************************** -->
+    <!-- ************************ SESSION ************************************************************************** -->
+    <session-config>
+        <session-timeout>10</session-timeout>
+        <tracking-mode>COOKIE</tracking-mode>
+    </session-config>
+    <!-- *********************************************************************************************************** -->
+    <!-- ************************ ERROR PAGES ********************************************************************** -->
+    <error-page>
+        <!-- FORBIDDEN AREA -->
+        <error-code>403</error-code>
+        <location>/pages/errors/error403.jsp</location>
+    </error-page>
+    <error-page>
+        <!-- PAGE NOT FOUND -->
+        <error-code>404</error-code>
+        <location>/pages/errors/error404.jsp</location>
+    </error-page>
+    <error-page>
+        <!-- METHOD NOT ALLOWED -->
+        <error-code>405</error-code>
+        <location>/pages/errors/error405.jsp</location>
+    </error-page>
+    <error-page>
+        <!-- REQUEST TIMEOUT -->
+        <error-code>408</error-code>
+        <location>/pages/errors/timeout.jsp</location>
+    </error-page>
+    <error-page>
+        <!-- INVALID INPUT -->
+        <error-code>422</error-code>
+        <location>/pages/errors/error422.jsp</location>
+    </error-page>
+    <error-page>
+        <!-- INTERNAL SERVER ERROR -->
+        <error-code>500</error-code>
+        <location>/pages/errors/error500.jsp</location>
+    </error-page>
+    <error-page>
+        <!-- NOT IMPLEMENTED -->
+        <error-code>501</error-code>
+        <location>/pages/errors/error501.jsp</location>
+    </error-page>
+    <error-page>
+        <!-- BAD GATEWAY -->
+        <error-code>502</error-code>
+        <location>/pages/errors/error502.jsp</location>
+    </error-page>
+    <error-page>
+        <!-- SERVICE TEMPORARILY UNAVAILABLE -->
+        <error-code>503</error-code>
+        <location>/pages/errors/pageUnderConstruction.jsp</location>
+    </error-page>
+    <!-- *********************************************************************************************************** -->
+</web-app>

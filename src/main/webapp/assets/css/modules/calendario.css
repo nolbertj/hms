@@ -1,0 +1,25 @@
+/************************************************************/
+/*  IMPORTS                                                 */
+/************************************************************/
+@import "card.css";
+@import "table.css";
+@import "dayPilotNavigator.css";
+@import "dayPilotCalendar.css";
+@import "dayPilotDatePicker.css";
+/************************************************************/
+.table-status {
+    height: calc(2 * var(--default-padding));
+    background-color: var(--secondary-color);
+    border-top: 1px solid white;
+}
+.btn-group {
+    width: 50%;
+}
+/************************************************************/
+/*  MOBILE VIEW                                             */
+/************************************************************/
+@media screen and (max-width: 992px) {
+    .btn-group {
+        width: unset;
+    }
+}

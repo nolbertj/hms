@@ -1,0 +1,52 @@
+#contattaci {
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 60px 0;
+    overflow: hidden;
+    background: white;
+}
+
+#contattaci .section-header {
+    padding-bottom: 30px;
+}
+
+#contattaci .contact-about h3 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #007bff;
+}
+
+#contattaci .contact-about p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Montserrat", sans-serif;
+    color: #888;
+}
+
+#contattaci .info {
+    color: #283d50;
+}
+
+#contattaci .info i {
+    font-size: 32px;
+    color: var(--darkgrey);
+    float: left;
+    line-height: 1;
+}
+
+#contattaci .info p {
+    padding: 0 0 10px 36px;
+    line-height: 28px;
+    font-size: 14px;
+    margin: 0 0 20px 0;
+}
+
+#contattaci .unitn {
+    width: auto;
+    height: 8rem;
+}

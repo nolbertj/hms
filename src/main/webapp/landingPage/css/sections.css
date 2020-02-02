@@ -1,0 +1,22 @@
+.section-header h3 {
+    font-size: 36px;
+    color: var(--lightblack);
+    text-align: center;
+    font-weight: 900;
+    position: relative;
+}
+
+.section-header p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: #556877;
+    width: 80%;
+}
+
+/* Section with background
+--------------------------------*/
+.section-bg {
+    background: #ecf5ff;
+}

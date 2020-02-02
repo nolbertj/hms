@@ -1,0 +1,1 @@
+SELECT COUNT(id_paziente) FROM foto_paziente WHERE id_paziente = ?

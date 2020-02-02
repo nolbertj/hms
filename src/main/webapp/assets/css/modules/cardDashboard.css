@@ -1,0 +1,46 @@
+/************************************************************/
+/*  THIS STYLESHEET REQUIRE card.css                        */
+/************************************************************/
+.card {
+    background: var(--primary-color);
+    height: 100%;
+}
+
+.card-body {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    color: var(--lightwhite);
+}
+
+.card-body:hover {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.card-body i {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.card-body span {
+    font-size: 120%;
+    font-weight: 800;
+    text-align: center;
+}
+/************************************************************/
+/*  MOBILE VIEW                                             */
+/************************************************************/
+@media screen and (max-width: 992px) {
+
+    .col {
+        margin: var(--default-padding) 0;
+    }
+
+}

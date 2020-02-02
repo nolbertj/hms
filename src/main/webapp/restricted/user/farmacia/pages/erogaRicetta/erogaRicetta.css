@@ -1,0 +1,19 @@
+/*********************************************************/
+/*  IMPORTS                                              */
+/*********************************************************/
+@import "../../../../../assets/css/modules/table.css";
+@import "../../../../../assets/css/modules/card.css";
+@import "../../../../../assets/css/modules/modal.css";
+@import "../../../../../assets/css/modules/suggestionBox.css";
+/*********************************************************/
+.card,
+.accordion {
+    margin-bottom: 1.5rem !important;
+}
+.selectContainer {
+    margin-bottom: 0 !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__clear {
+    font-size: 2rem;
+    bottom: 5px;
+}

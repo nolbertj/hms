@@ -1,0 +1,1 @@
+SELECT * FROM documento WHERE email_proprietario = ?

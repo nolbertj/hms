@@ -1,0 +1,6 @@
+@import "../../../../../assets/css/modules/card.css";
+@import "../../../../../assets/css/modules/cardDashboard.css";
+
+.breadcrumb {
+    display: none !important;
+}

@@ -1,0 +1,13 @@
+/**********************************************************/
+/*  IMPORTS                                               */
+/**********************************************************/
+@import "../../../../../assets/css/modules/checkbox.css";
+@import "../../../../../assets/css/modules/card.css";
+@import "../../../../../assets/css/modules/table.css";
+@import "../../../../../assets/css/modules/profileCard.css";
+@import "../../../../../assets/css/modules/modal.css";
+@import "../../../../../assets/css/modules/passwordCard.css";
+/**********************************************************/
+.custom-control {
+    padding-left: 2rem;
+}

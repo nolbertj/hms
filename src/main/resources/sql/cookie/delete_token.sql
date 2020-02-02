@@ -1,0 +1,1 @@
+DELETE FROM ricordami_cookie WHERE selector=?

@@ -1,0 +1,49 @@
+#intro {
+    width: 100%;
+    position: relative;
+    background: url("../img/background.jpg") center bottom no-repeat;
+    background-size: cover;
+    padding: 200px 0 120px 0;
+}
+
+#intro .hms {
+    display: none;
+}
+
+#intro .intro-img {
+    width: 50%;
+}
+
+#intro .devices {
+    position: absolute;
+    top: 127px;
+    left: 0;
+    max-width: 1000px;
+}
+
+#intro .macbook {
+    display: none;
+}
+
+#intro .intro-info {
+    position: absolute;
+    top: 600px;
+    left: 40px;
+    z-index: 900;
+}
+
+#intro .intro-info a {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 32px;
+    border-radius: 50px;
+    color: white;
+    display: block;
+    background: var(--secondary-color);
+}
+
+#intro .intro-info a:hover {
+    background: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+}

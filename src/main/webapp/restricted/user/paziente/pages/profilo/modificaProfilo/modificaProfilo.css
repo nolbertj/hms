@@ -1,0 +1,26 @@
+/**********************************************************/
+/*  IMPORTS                                               */
+/**********************************************************/
+
+/**********************************************************/
+.file {
+    overflow: hidden;
+    display: block;
+}
+.custom-label {
+    padding-bottom: 0.5rem;
+}
+/**********************************************************/
+@media screen and (max-width: 992px) {
+    .file {
+        overflow: scroll;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .file-title {
+        border-left: none;
+        border-top-left-radius: inherit;
+        border-bottom-left-radius: inherit;
+    }
+}

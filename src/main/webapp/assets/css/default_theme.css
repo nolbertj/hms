@@ -1,0 +1,104 @@
+/************************************************/
+/*  IMPORTS                                     */
+/************************************************/
+@import "modules/colors.css";
+/************************************************/
+/************************************************/
+/*  CONSTANTS VARIABLES FOR THE DEFAULT THEME   */
+/************************************************/
+:root {
+    /************************************************/
+    /*  NAVBAR                                      */
+    /************************************************/
+    --navbar-color: var(--secondary-color);
+    --navbar-text-color: var(--lightwhite);
+    --navbar-text-hover-color: var(--white);
+    --navbar-icon-toggler-color: var(--white);
+    --navbar-dropdown-menu-color: var(--white);
+    --navbar-dropdown-menu-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    --navbar-dropdown-text-color: rgba(0,0,0,0.9);
+    --navbar-dropdown-text-color-hover: var(--white);
+    --navbar-dropdown-menu-hover-color: var(--primary-color);
+    --navbar-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, 0.03),
+                     0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03),
+                     0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05),
+                     0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03);
+    --navbar-notification-color: red;
+
+    /************************************************/
+    /*  SIDEBAR                                     */
+    /************************************************/
+    --sidebar-primary-color: var(--primary-color);
+    --sidebar-secondary-color: var(--secondary-color);
+    --sidebar-background: linear-gradient(-225deg, var(--sidebar-primary-color), var(--sidebar-secondary-color));
+    --sidebar-shadow: 0 .125rem 9.375rem rgba(90,97,105,.1),
+                      0 .25rem .5rem rgba(90,97,105,.12),
+                      0 .9375rem 1.375rem rgba(90,97,105,.1),
+                      0 .4375rem 2.1875rem rgba(165,182,201,.1);
+    --sidebar-title-color: var(--white);
+    --sidebar-title-text-shadow: 1px 0px 5px rgba(0,0,0,0.3);
+    --sidebar-text-color: var(--lightwhite);
+    --sidebar-text-color-hover: var(--white);
+
+
+    --sidebar-header-border: 1px solid rgba(255,255,255,0.5);
+    --sidebar-submenu-color: unset;
+    --sidebar-list-item-hover-color: rgba(255,255,255,0.1);
+    --sidebar-footer-color: var(--sidebar-secondary-color);
+    --sidebar-footer-shadow: unset;
+    --sidebar-footer-text-color: rgba(255,255,255,0.5);
+    --sidebar-footer-border: 1px solid rgba(255,255,255,0.3);
+    --sidebar-footer-text-color-hover: var(--white);
+    --sidebar-footer-hover-shadow: inset 0 6px 5px -5px rgba(0, 0, 0, 0.5);
+    --sidebar-footer-hover: var(--sidebar-footer-color);
+
+    --body-color: rgb(240, 240, 250);
+    --page-container-color: unset;
+
+    --content-header-color: unset;
+    --content-header-shadow: unset;
+    --content-header-title-color: rgb(95,110,130);
+    --content-header-links-bg-color: rgba(0,0,0,0.1);
+    --content-header-text-color: var(--sidebar-secondary-color);
+    --content-header-text-active-color: var(--content-header-title-color);
+
+    --footer-color: unset;
+    --footer-text-color: var(--content-header-title-color);
+
+    /************************************************/
+    /*  SIZE SETTINGS                               */
+    /************************************************/
+    --navbar-height: 56px;
+    --sidebar-img-size: 80px;
+    --sidebar-img-border-radius: 50%;
+    --sidebar-open-width: 15rem;
+    --sidebar-closed-width: 4rem;
+    --sidebar-footer-height: 50px;
+    --default-padding: 1rem;
+    --footer-height: var(--navbar-height);
+
+    --content-header-linkg-border-radius: 2px;
+
+    /************************************************/
+    /*  FONT & ICONS SETTINGS                       */
+    /************************************************/
+    --body-font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    --body-font-size: 1rem;
+
+    --navbar-dropdown-menu-icon-size: 22px;
+    --navbar-dropdown-menu-font-size: 16px;
+    --navbar-dropdown-menu-font-weight: 500;
+
+    --sidebar-title-size: 18px;
+    --sidebar-title-weight: 800;
+    --sidebar-title-icon-size: 22px;
+
+    --sidebar-content-text-size: .95rem;
+
+    --sidebar-menu-title-size: 14px;
+    --sidebar-menu-title-weight: 900;
+
+    --content-header-title-size: 28px;
+    --content-header-title-weight: 500;
+
+}

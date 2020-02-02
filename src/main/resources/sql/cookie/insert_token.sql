@@ -1,0 +1,1 @@
+INSERT INTO ricordami_cookie(selector, validator, user_mail) VALUES(?,?,?)

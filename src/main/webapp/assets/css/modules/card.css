@@ -1,0 +1,67 @@
+/************************************************************/
+/* CONSTANTS VARIABLES                                      */
+/************************************************************/
+:root {
+    --card-background: rgb(240,240,250);
+    --card-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07) !important;
+    --card-header-color: var(--white);
+    --card-header-text-color: var(--lightblack2);
+    --card-border-radius: .5rem !important;
+}
+/************************************************************/
+.accordion>.card:first-of-type {
+    border-bottom: var(--card-border-radius);
+    border-bottom-right-radius: var(--card-border-radius);
+    border-bottom-left-radius: var(--card-border-radius);
+}
+.accordion>.card:last-of-type {
+    border-top-left-radius: var(--card-border-radius);
+    border-top-right-radius: var(--card-border-radius);
+}
+.card {
+    border: 0;
+    box-shadow: var(--card-shadow);
+    -o-box-shadow: var(--card-shadow);
+    -moz-box-shadow: var(--card-shadow);
+    -webkit-box-shadow: var(--card-shadow);
+    -moz-border-radius: var(--card-border-radius);
+    -webkit-border-radius: var(--card-border-radius);
+}
+.card .card-header {
+    padding: 10px 10px;
+    background-color: var(--card-header-color);
+}
+.card .card-header .accordion-toggle.collapsed .icon {
+    transform: rotate(-180deg);
+}
+.card .card-header:first-child {
+    border-top-left-radius: var(--card-border-radius);
+    border-top-right-radius: var(--card-border-radius);
+}
+.card .card-header .card-title {
+    font-size: large;
+    margin: 0;
+    padding: 0;
+}
+.card .card-header,
+.card .card-header a,
+.card .card-header a:hover {
+    color: var(--card-header-text-color);
+    text-decoration: none;
+}
+.card .card-header i {
+    transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+/************************************************************/
+/*  MOBILE VIEW                                             */
+/************************************************************/
+@media screen and (max-width: 992px) {
+
+    .card .card-body {
+        padding: var(--default-padding);
+    }
+
+}

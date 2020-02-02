@@ -1,0 +1,1 @@
+INSERT INTO documento(email_proprietario,titolo,data_caricamento,descrizione,filename) VALUES(?,?,?,?,?)

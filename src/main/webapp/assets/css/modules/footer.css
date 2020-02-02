@@ -1,0 +1,33 @@
+#page-container footer {
+    background: var(--footer-color);
+    color: var(--footer-text-color);
+    padding: 0;
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+/* sticky footer technique */
+#content {
+    min-height: 100%;
+    margin-bottom: calc((var(--footer-height) * (-1)) - var(--navbar-height) - var(--content-header-title-size) - (2*var(--default-padding)));
+}
+#content:after {
+    content: "";
+    display: block;
+}
+#content:after,
+#page-container footer {
+    height: calc(var(--footer-height) + var(--navbar-height) + var(--content-header-title-size));
+}

@@ -1,0 +1,89 @@
+/******************************************************/
+/*  IMPORTS                                           */
+/******************************************************/
+@import "../../../../../assets/css/modules/checkbox.css";
+@import "../../../../../assets/css/modules/card.css";
+@import "../../../../../assets/css/modules/table.css";
+@import "../../../../../assets/css/modules/profileCard.css";
+@import "../../../../../assets/css/modules/modal.css";
+/******************************************************/
+
+.custom-control {
+    padding-left: 2rem;
+}
+
+#table-panel {
+    display: none;
+}
+
+#TAB thead th:first-child {
+    border-top-left-radius: var(--table-border-radius);
+    -moz-border-radius-topleft: var(--table-border-radius);
+    -webkit-border-top-left-radius: var(--table-border-radius);
+}
+
+#TAB thead th:last-child {
+    border-top-right-radius: var(--table-border-radius);
+    -moz-border-radius-topright: var(--table-border-radius);
+    -webkit-border-top-right-radius: var(--table-border-radius);
+}
+
+#TAB thead tr {
+    color: var(--table-head-text-hover-color);
+    background: var(--table-head-color);
+}
+
+#TAB th,
+#TAB td {
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    vertical-align: middle;
+}
+
+#TAB img {
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.file-title {
+    margin-right: unset !important;
+    border-left: 1px solid lightgray;
+    border-bottom-left-radius: .25rem;
+}
+
+.dynamic-buttons .btn {
+    cursor: pointer;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.dynamic-buttons .form-control {
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+@media screen and (min-width: 992px){ /*desktop screen*/
+
+    #password-form-container {
+        padding: 0 var(--default-padding);
+    }
+
+    #currentPwd {
+        width: calc(50% - var(--default-padding));
+    }
+    #newPwd {
+        margin-right: var(--default-padding);
+    }
+}
+
+@media screen and (max-width: 992px) { /* smartphone screen */
+
+    #password-form-container {
+        margin: 0;
+        display: inline;
+    }
+
+}

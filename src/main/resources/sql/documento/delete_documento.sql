@@ -1,0 +1,1 @@
+DELETE FROM documento WHERE email_proprietario=? AND filename=?

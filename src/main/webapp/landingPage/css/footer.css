@@ -1,0 +1,30 @@
+footer {
+    background: var(--secondary-color);
+    color: var(--footer-text-color);
+    height: calc(var(--footer-height) + var(--navbar-height) + var(--content-header-title-size));
+    padding: 0;
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+footer span {
+    color: white;
+}
+footer a {
+    color: var(--lightwhite);
+}
+footer a:hover {
+    color: white;
+}

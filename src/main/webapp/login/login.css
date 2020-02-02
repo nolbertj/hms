@@ -1,0 +1,255 @@
+/************************************************/
+/*  IMPORTS                                     */
+/************************************************/
+@import "../assets/css/modules/colors.css";
+@import "../assets/css/modules/checkbox.css";
+@import "../assets/css/modules/card.css";
+/************************************************/
+:root {
+    --body-background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    --logo-color: var(--secondary-color);
+    --logo-size: 4rem;
+    --input-border-radius: 0.33rem;
+    --input-border-color: var(--primary-color);
+    --button-background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+}
+
+body {
+    height: 100vh;
+    /*background: var(--body-background);*/
+    background-image: url(../landingPage/img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(50,170,230,0.6);
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    line-height: unset;
+}
+
+.card {
+    background: var(--card-background);
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    padding: 2rem;
+    border-radius: var(--card-border-radius);
+    -ms-border-radius: var(--card-border-radius);
+    -moz-border-radius: var(--card-border-radius);
+    -webkit-border-radius: var(--card-border-radius);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+
+#logo {
+    color: var(--secondary-color);
+    font-size: var(--logo-size);
+    text-shadow: 2px 0 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+
+form {
+    padding: 1rem;
+}
+
+.custom-select {
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    background-image:
+                    -ms-linear-gradient(45deg,transparent 50%, white 50%),
+                    -ms-linear-gradient(135deg, white 50%, transparent 50%),
+                    -ms-linear-gradient(to right, var(--secondary-color), var(--secondary-color));
+    background-image:
+                    -moz-linear-gradient(45deg,transparent 50%, white 50%),
+                    -moz-linear-gradient(135deg, white 50%, transparent 50%),
+                    -moz-linear-gradient(to right, var(--secondary-color), var(--secondary-color));
+    background-image:
+                    -o-linear-gradient(45deg,transparent 50%, white 50%),
+                    -o-linear-gradient(135deg, white 50%, transparent 50%),
+                    -o-linear-gradient(to right, var(--secondary-color), var(--secondary-color));
+    background-image:
+                    -webkit-linear-gradient(45deg,transparent 50%, white 50%),
+                    -webkit-linear-gradient(135deg, white 50%, transparent 50%),
+                    -webkit-linear-gradient(to right, var(--secondary-color), var(--secondary-color));
+    background-image:
+                    linear-gradient(45deg,transparent 50%, white 50%),
+                    linear-gradient(135deg, white 50%, transparent 50%),
+                    linear-gradient(to right, var(--secondary-color), var(--secondary-color));
+    background-position:
+                    calc(100% - 18px) calc(1em + 2px),
+                    calc(100% - 13px) calc(1em + 2px),
+                    100% 0;
+    background-size:
+                    5px 5px,
+                    5px 5px,
+                    2.5em 2.5em;
+    background-repeat: no-repeat;
+    -webkit-border-radius: var(--input-border-radius);
+    -moz-border-radius: var(--input-border-radius);
+    -ms-border-radius: var(--input-border-radius);
+    border-radius: var(--input-border-radius);
+    font-size: 0.9rem;
+    padding-right: 50px;
+    cursor: pointer;
+}
+
+input:active,
+input:focus,
+select:active,
+select:focus {
+    outline: 0 !important;
+    -webkit-appearance:none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
+    border-color: var(--secondary-color) !important;
+}
+
+.form-control {
+    border-left: 0;
+}
+
+.input-group {
+    margin: 1rem 0;
+}
+
+.input-group>.form-control {
+    height: 100%;
+}
+
+.input-group-text {
+    background: var(--secondary-color);
+    color: white !important;
+    border: 0;
+    -webkit-border-radius: var(--input-border-radius) 0 0 var(--input-border-radius) !important;
+    -moz-border-radius: var(--input-border-radius) 0 0 var(--input-border-radius) !important;
+    -ms-border-radius: var(--input-border-radius) 0 0 var(--input-border-radius) !important;
+    border-radius: var(--input-border-radius) 0 0 var(--input-border-radius) !important;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.form-control {
+    -webkit-border-radius: var(--input-border-radius);
+    -moz-border-radius: var(--input-border-radius);
+    -ms-border-radius: var(--input-border-radius);
+    border-radius: var(--input-border-radius);
+}
+
+.custom-control-label {
+    font-size: 0.9rem;
+    padding-top: 4px;
+}
+
+footer {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.login_btn {
+    color: white;
+    width: 100%;
+    margin: 1rem 0;
+    background: var(--button-background);
+    border: 0;
+    text-shadow: 2px 0 3px rgba(0,0,0,0.2);
+    -webkit-border-radius: var(--input-border-radius);
+    -moz-border-radius: var(--input-border-radius);
+    -ms-border-radius: var(--input-border-radius);
+    border-radius: var(--input-border-radius);
+}
+.login_btn:hover {
+    color: white;
+}
+
+.login_btn:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+}
+
+a {
+    color: var(--secondary-color);
+    display: block;
+    text-align: center;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+}
+
+@media screen and (max-width: 600px) {
+
+    .card {
+        justify-content: start;
+        height: 100vh;
+        width: 100vw;
+        padding: 1rem;
+        padding-top: 3rem;
+        border-radius: 0;
+        -ms-border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .custom-select {
+        background-position: calc(100% - 24px) calc(1em + 2px),
+                             calc(100% - 19px) calc(1em + 2px),
+                             100% 0;
+        font-size: 105%;
+    }
+
+    .input-group {
+        height: 23%;
+    }
+
+    .form-control {
+        font-size: 105%;
+    }
+
+    .custom-control-label {
+        font-size: 105%;
+        padding-top: unset;
+        padding-left: 5px;
+    }
+
+    body,
+    .input-group,
+    .btn {
+        font-size: 110%;
+    }
+
+    .btn {
+        padding: .5rem 1rem;
+    }
+
+    .login_btn {
+        margin: 2rem 0;
+    }
+}

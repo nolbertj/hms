@@ -1,0 +1,1 @@
+<custom:select2 id="inputPaziente"></custom:select2>

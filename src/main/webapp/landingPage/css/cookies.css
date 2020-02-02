@@ -1,0 +1,19 @@
+#cookieSection {
+    padding-bottom: 2rem;
+}
+#cookieSection h5 {
+    margin-top: 2rem;
+    font-size: 36px;
+    color: var(--lightblack);
+    text-align: center;
+    font-weight: 900;
+}
+
+#cookieSection p {
+    padding: 0 3rem;
+    text-align: justify;
+}
+
+#cookieSection ul {
+    padding: 0 5rem;
+}

@@ -1,0 +1,27 @@
+#copyrightSection {
+    background: white;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding-bottom: 2rem;
+}
+#copyrightSection strong {
+    margin-top: 2rem;
+    font-size: 36px;
+    color: var(--lightblack);
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+#copyrightSection div {
+    text-align: justify;
+    padding: 0 1rem;
+}
+/************************************************************/
+/*  MOBILE VIEW                                             */
+/************************************************************/
+@media (max-width: 992px) {
+    #copyrightSection strong {
+        font-size: 20px;
+        text-align: center;
+    }
+}

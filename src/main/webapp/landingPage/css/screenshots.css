@@ -1,0 +1,14 @@
+#screenshots {
+    background: white;
+    padding: 60px 0;
+}
+
+#screenshots .screenshot-row {
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+#screenshots .screenshot-row h4 {
+    font-weight: 600;
+    font-size: 24px;
+}

@@ -1,0 +1,1 @@
+UPDATE ricordami_cookie SET validator = ? where selector=? AND user_mail=?

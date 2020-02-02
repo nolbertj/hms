@@ -1,0 +1,18 @@
+/********************************************************/
+/*  IMPORTS                                             */
+/********************************************************/
+@import "../../../../../assets/css/modules/card.css";
+@import "../../../../../assets/css/modules/cardDashboard.css";
+/********************************************************/
+.breadcrumb {
+    display: none !important;
+}
+.counter {
+    font-size: 2.5rem !important;
+}
+
+@media screen and (max-width: 992px) {
+    span.counter + span {
+        font-size: 1.1rem !important;
+    }
+}

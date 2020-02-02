@@ -1,0 +1,62 @@
+/* 
+DayPilot Navigator Theme 
+https://themes.daypilot.org/navigator/theme/4nafik
+Theme Designer Version: 2019.08.13.78552
+*/
+.datepicker_main { border-left: 1px solid #52779c;border-right: 1px solid #52779c;border-bottom: 1px solid #52779c; font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 11px; }
+.datepicker_main *, .datepicker_main *:before, .datepicker_main *:after { box-sizing: border-box; }
+.datepicker_line { border-bottom: 1px solid #52779c; }
+/* month header */ 
+.datepicker_title, .datepicker_titleleft, .datepicker_titleright { 
+	border-top: 1px solid #52779c;
+	color: #ffffff;
+	background: #1066a8;
+	background: -webkit-gradient(linear, left top, left bottom, from(#1585da), to(#0b4776));
+	background: -webkit-linear-gradient(top, #1585da 0%, #0b4776);
+	background: -moz-linear-gradient(top, #1585da 0%, #0b4776);
+	background: -ms-linear-gradient(top, #1585da 0%, #0b4776);
+	background: -o-linear-gradient(top, #1585da 0%, #0b4776);
+	background: linear-gradient(top, #1585da 0%, #0b4776);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#1585da", endColorStr="#0b4776");
+}
+.datepicker_title { text-align: center; }
+.datepicker_titleleft, .datepicker_titleright { text-align: center; }
+/* day headers */
+.datepicker_dayheader { 
+	color: #2a5373;
+	background: #ffffff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e6e6e6));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #e6e6e6);
+	background: -moz-linear-gradient(top, #ffffff 0%, #e6e6e6);
+	background: -ms-linear-gradient(top, #ffffff 0%, #e6e6e6);
+	background: -o-linear-gradient(top, #ffffff 0%, #e6e6e6);
+	background: linear-gradient(top, #ffffff 0%, #e6e6e6);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#ffffff", endColorStr="#e6e6e6");
+	padding: 0px;
+	text-align: center;
+}
+/* day cells */
+.datepicker_cell { 
+	color: #000000;
+	background: #f2f7f7;
+	text-align: center;
+}
+.datepicker_cell_text {
+	padding: 0px;
+}
+.datepicker_weeknumber { 
+	color: #0e4773;
+	background: #b6cdde;
+	text-align: center;
+	padding: 0px;
+}
+.datepicker_weekend { 
+	color: #000000;
+	background: #f0f0f0;
+	text-align: center;
+	padding: 0px;
+}
+.datepicker_dayother { color: gray; }
+.datepicker_todaybox { border: 1px solid red; }
+.datepicker_busy { font-weight: bold; }
+.datepicker_select .datepicker_cell_box { background-color: #ffe794; opacity: 0.5; }

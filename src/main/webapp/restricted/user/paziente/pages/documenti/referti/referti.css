@@ -1,0 +1,10 @@
+/******************************************************/
+/*  IMPORTS                                           */
+/******************************************************/
+@import "../../../../../../assets/css/modules/table.css";
+@import "../../../../../../assets/css/modules/card.css";
+/******************************************************/
+.btn-primary {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
