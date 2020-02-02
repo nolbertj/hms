@@ -322,10 +322,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 We use [Git](https://git-scm.com) for versioning.
 
-## Authors
+You can find the original project on [GitLab](https://gitlab.com/) repository [<strong>here</strong>](https://gitlab.com/unitnAB.it/webprog/HMS) with commits and issues.
 
-- **Alessandro Brighenti** - alessandro.brighenti@studenti.unitn.it - 193256
+## Authors
 - **Nolbert Juarez** - nolbert.juarezvera@studenti.unitn.it - 193610
+- **Alessandro Brighenti** - alessandro.brighenti@studenti.unitn.it - 193256
 - **Alessandro Tomazzolli** - a.tomazzolli@studenti.unitn.it - 195254
 
 ## License
