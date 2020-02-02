@@ -4,12 +4,12 @@
 Open online deployed project [here](https://hms-unitn.herokuapp.com/).
 
 Login accounts: [default password: password]
-* Paziente: asia.fosc@yopmail.com [password: Password2]
-* Medico specialista: mina.semi@yopmail.com
-* Medico di base: lea.burg@yopmail.com
-* Farmacia: ALLANGELO@yopmail.com
-* Servizio Sanitario Provinciale: azienda.provinciale.servizisanitari@yopmail.com
-* Amministratore: admin@email.it
+* Paziente: `asia.fosc@yopmail.com` [password: Password2]
+* Medico specialista: `mina.semi@yopmail.com`
+* Medico di base: `lea.burg@yopmail.com`
+* Farmacia: `ALLANGELO@yopmail.com`
+* Servizio Sanitario Provinciale: `azienda.provinciale.servizisanitari@yopmail.com`
+* Amministratore: `admin@email.it`
 <br><sup>[you can find another users with a simple query]</sup>
 
 <sup>ATTENTION: due to problem's with the `Context path`, all the filters were disabled (commented) in the web.xml'. If a hyperlink doesn't work, please write manually the path in the url bar. If you deploy the project locally, enable filters uncommenting the filters and filter-mapping in the `web.xml`.</sup>
