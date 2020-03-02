@@ -1,19 +1,5 @@
 # Healthcare management System
 
-## PROJECT AND REMOTE DATABASE ONLINE UNTIL AUGUST 2020
-Open online deployed project [here](https://hms-unitn.herokuapp.com/).
-
-Login accounts: [default password: password]
-* Paziente: `asia.fosc@yopmail.com` [password: Password2]
-* Medico specialista: `mina.semi@yopmail.com`
-* Medico di base: `lea.burg@yopmail.com`
-* Farmacia: `ALLANGELO@yopmail.com`
-* Servizio Sanitario Provinciale: `azienda.provinciale.servizisanitari@yopmail.com`
-* Amministratore: `admin@email.it`
-<br><sup>[you can find another users with a simple query]</sup>
-
-<sup>ATTENTION: due to problem's with the `Context path`, all the filters were disabled (commented) in the web.xml'. If a hyperlink doesn't work, please write manually the path in the url bar. If you deploy the project locally, enable filters uncommenting the filters and filter-mapping in the `web.xml`.</sup>
-
 ## Descrizione
 
 Questo sito web consente di avere accesso alle prestazioni sanitarie prescritte ed erogate, oltre che ad alcune informazioni riguardanti i pazienti.
@@ -183,18 +169,21 @@ Quindi sono visualizzabili le mail mandate a tutti gli utenti iscritti al serviz
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
+- ### Requirments
+   You must have [Tomacat](http://tomcat.apache.org/) and [JDK11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) already installed.
+
 - ### Preparation
 
   1. **Clone** this repo on your host using [Git](https://git-scm.com)
 
      ```console
-     $ git clone https://gitlab.com/unitnAB.it/webprog/HMS.git
+     $ git clone https://github.com/nolbertj/hms.git
      ```
 
   2. **Change** current working **directory**
 
      ```console
-     $ cd HMS
+     $ cd hms
      ```
 
   3. Create the war file
@@ -213,37 +202,16 @@ These instructions will get you a copy of the project up and running on your loc
 
      ```console
      $ ls
+     $ open ./ 
      ```
+      With the commands above you'll be able to open the `target` folder. Keep it opened and copy *HMS.war*      
 
   6. Paste the war file in the folder **CATALINA_HOME/webapps**
 
      ```console
      $ CATALINA_HOME/webapps
      ```
-
-  7. Change current directory
-     ```console
-     $ cd CATALINA_HOME/bin
-     ```
-  8. Start Tomcat server
-
-     > Windows user
-
-     ```console
-     $ ./startup.bat
-     ```
-
-     > Linux user
-
-     ```console
-     $ ./startup.sh
-     ```
-
-- ### Restore the database backup (skip if you connect to the AWS-hosted database)
-
-  > Change datatabase options in the file **database.propreties** before you start the database
-
-- Create the database
+- ### Create the database
 
   1. Open the SQL Shell
   2. Provide the data requested
@@ -265,7 +233,36 @@ These instructions will get you a copy of the project up and running on your loc
   6. Restore the database
      ```console
         $ psql -U [username] -d [name] -f backup.sql
+     ```     
+
+  > Change datatabase options in the file **database.propreties** before you start the database
+
+- ### Start Tomcat server
+      Go to `CATALINA_HOME/bin` directory
+   ```console
+     $ cd CATALINA_HOME/bin
      ```
+   and start server with one of these commands: 
+   
+     > Windows user
+
+     ```console
+     $ ./startup.bat
+     ```
+
+     > Linux user
+
+     ```console
+     $ ./startup.sh
+     ```
+- ### Login accounts: [default password: password]
+   * Paziente: `asia.fosc@yopmail.com` [password: Password2]
+   * Medico specialista: `mina.semi@yopmail.com`
+   * Medico di base: `lea.burg@yopmail.com`
+   * Farmacia: `ALLANGELO@yopmail.com`
+   * Servizio Sanitario Provinciale: `azienda.provinciale.servizisanitari@yopmail.com`
+   * Amministratore: `admin@email.it`<br>
+   <br><sup>[you can find another users with a simple query]</sup>
 
 ## Properties files
 
@@ -322,7 +319,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 We use [Git](https://git-scm.com) for versioning.
 
-You can find the original project on [GitLab](https://gitlab.com/) repository [<strong>here</strong>](https://gitlab.com/unitnAB.it/webprog/HMS) with commits and issues.
+You can find the [<strong>original project on GitLab repository here</strong>](https://gitlab.com/unitnAB.it/webprog/HMS) with commits and issues.
 
 ## Authors
 - **Nolbert Juarez** - nolbert.juarezvera@studenti.unitn.it - 193610
